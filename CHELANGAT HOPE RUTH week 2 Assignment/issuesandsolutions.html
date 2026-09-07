@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="East Africa Cargo Transportation Statistics and Accessibility Audit">
+<title>Week 2 - East Africa Cargo Transportation Accessibility Audit</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #17202a;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background: white;
+    color: #123c69;
+    outline: 3px solid #f4c542;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #123c69;
+    border-bottom: 3px solid #123c69;
+    padding-bottom: 8px;
+}
+
+.stat-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.stat {
+    border: 2px solid #123c69;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat strong {
+    display: block;
+    font-size: 28px;
+    color: #123c69;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #123c69;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #eef2f6;
+}
+
+.audit-item {
+    border-left: 5px solid #123c69;
+    padding: 15px;
+    margin: 15px 0;
+    background: #f1f5f9;
+}
+
+.audit-item h3 {
+    margin-top: 0;
+    color: #123c69;
+}
+
+button {
+    background: #123c69;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover,
+button:focus {
+    background: #0b2948;
+    outline: 3px solid #f4c542;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>East Africa Cargo Transportation</h1>
+    <p>Week 2 Competency Evidence – Accessibility Audit</p>
+
+    <nav aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#statistics">Statistics</a>
+        <a href="#corridors">Corridors</a>
+        <a href="#audit">Accessibility Audit</a>
+        <a href="#reflection">Reflection</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="overview">
+    <h2>Project Overview</h2>
+
+    <p>
+        This project examines cargo transportation across East Africa using
+        selected statistics from major transport corridors and ports.
+        The project also evaluates the accessibility of a web page presenting
+        cargo transportation information.
+    </p>
+
+    <p>
+        East African cargo transportation is important for connecting
+        coastal ports with landlocked countries including Uganda, Rwanda
+        and Burundi.
+    </p>
+</section>
+
+<section id="statistics">
+    <h2>East Africa Cargo Transportation Statistics</h2>
+
+    <div class="stat-container">
+
+        <div class="stat">
+            <strong>45.45M</strong>
+            <span>Tonnes handled at Mombasa Port in 2025</span>
+        </div>
+
+        <div class="stat">
+            <strong>40.99M</strong>
+            <span>Tonnes handled at Mombasa Port in 2024</span>
+        </div>
+
+        <div class="stat">
+            <strong>13.4M</strong>
+            <span>Tonnes of transit cargo in 2024</span>
+        </div>
+
+        <div class="stat">
+            <strong>70%+</strong>
+            <span>Road freight share in the EAC</span>
+        </div>
+
+    </div>
+
+    <table>
+        <caption>Selected Cargo Transportation Statistics</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Indicator</th>
+                <th scope="col">Value</th>
+                <th scope="col">Period</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Mombasa Port total cargo</td>
+                <td>40.99 million tonnes</td>
+                <td>2024</td>
+            </tr>
+
+            <tr>
+                <td>Mombasa Port total cargo</td>
+                <td>45.45 million tonnes</td>
+                <td>2025</td>
+            </tr>
+
+            <tr>
+                <td>Transit cargo through Mombasa</td>
+                <td>13.4 million tonnes</td>
+                <td>2024</td>
+            </tr>
+
+            <tr>
+                <td>Road freight share</td>
+                <td>More than 70%</td>
+                <td>EAC estimate</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="corridors">
+    <h2>Major East African Cargo Corridors</h2>
+
+    <article>
+        <h3>Northern Corridor</h3>
+        <p>
+            The Northern Corridor connects the Port of Mombasa in Kenya
+            with Uganda, Rwanda, Burundi and eastern Democratic Republic
+            of Congo.
+        </p>
+    </article>
+
+    <article>
+        <h3>Central Corridor</h3>
+        <p>
+            The Central Corridor connects the Port of Dar es Salaam in
+            Tanzania with Uganda, Rwanda, Burundi and other regional markets.
+        </p>
+    </article>
+</section>
+
+<section id="audit">
+    <h2>Week 2 Accessibility Audit</h2>
+
+    <p>
+        The following issues were identified when evaluating the accessibility
+        of the cargo transportation website.
+    </p>
+
+    <div class="audit-item">
+        <h3>1. Missing alternative text</h3>
+        <p><strong>Who may be affected:</strong>
+        Blind and visually impaired users.</p>
+        <p><strong>Barrier:</strong>
+        Screen readers cannot explain the information contained in images.</p>
+        <p><strong>Improvement:</strong>
+        Add meaningful alt text to informative images.</p>
+    </div>
+
+    <div class="audit-item">
+        <h3>2. Poor colour contrast</h3>
+        <p><strong>Who may be affected:</strong>
+        Users with low vision or colour-vision difficulties.</p>
+        <p><strong>Barrier:</strong>
+        Low-contrast text can be difficult to read.</p>
+        <p><strong>Improvement:</strong>
+        Use sufficient contrast between text and background.</p>
+    </div>
+
+    <div class="audit-item">
+        <h3>3. Inaccessible tables</h3>
+        <p><strong>Who may be affected:</strong>
+        Screen-reader users.</p>
+        <p><strong>Barrier:</strong>
+        Users may have difficulty understanding relationships between
+        statistics and their headings.</p>
+        <p><strong>Improvement:</strong>
+        Use captions, table headers and the scope attribute.</p>
+    </div>
+
+    <div class="audit-item">
+        <h3>4. Poor keyboard navigation</h3>
+        <p><strong>Who may be affected:</strong>
+        Users with motor disabilities.</p>
+        <p><strong>Barrier:</strong>
+        Users who cannot operate a mouse may struggle to navigate the site.</p>
+        <p><strong>Improvement:</strong>
+        Make all links and controls keyboard accessible.</p>
+    </div>
+
+    <div class="audit-item">
+        <h3>5. Small or fixed-size text</h3>
+        <p><strong>Who may be affected:</strong>
+        Users with visual difficulties and older users.</p>
+        <p><strong>Barrier:</strong>
+        Small text makes statistics difficult to read.</p>
+        <p><strong>Improvement:</strong>
+        Use responsive text and allow users to zoom the page.</p>
+    </div>
+
+    <div class="audit-item">
+        <h3>6. Unclear navigation</h3>
+        <p><strong>Who may be affected:</strong>
+        Users with cognitive disabilities and first-time visitors.</p>
+        <p><strong>Barrier:</strong>
+        Users may have difficulty locating important information.</p>
+        <p><strong>Improvement:</strong>
+        Use clear, descriptive and consistent navigation links.</p>
+    </div>
+
+</section>
+
+<section id="reflection">
+    <h2>Week 2 Reflection</h2>
+
+    <p>
+        During the accessibility audit, I examined an East African cargo
+        transportation website and identified several barriers that could
+        prevent users from accessing information effectively. The major
+        issues identified included missing alternative text, poor colour
+        contrast, inaccessible tables, limited keyboard navigation, small
+        text and unclear navigation. I addressed these problems by using
+        semantic HTML, accessible navigation, table captions and headings,
+        readable text sizes, keyboard-friendly links and responsive design.
+        The project also helped me understand that accessibility should be
+        considered from the beginning of website development rather than
+        added at the end. Using cargo transportation statistics made the
+        project practical because the information can be useful to logistics
+        companies, researchers, students and policymakers across East Africa.
+    </p>
+</section>
+
+<section>
+    <h2>Interactive Accessibility Check</h2>
+
+    <p>
+        Click the button to confirm that JavaScript is working correctly.
+    </p>
+
+    <button type="button" onclick="runAccessibilityCheck()">
+        Run Accessibility Check
+    </button>
+
+    <p id="message" role="status" aria-live="polite"></p>
+</section>
+
+</main>
+
+<footer>
+    <p>
+        East Africa Cargo Transportation Statistics |
+        Week 2 Competency Evidence
+    </p>
+    <p>Developed using HTML, CSS and JavaScript</p>
+</footer>
+
+<script>
+function runAccessibilityCheck() {
+
+    const images = document.querySelectorAll("img");
+    const links = document.querySelectorAll("a");
+    const headings = document.querySelectorAll("h1, h2, h3");
+    const tables = document.querySelectorAll("table");
+
+    let results = [];
+
+    if (images.length === 0) {
+        results.push("✓ No images requiring alternative text were found.");
+    } else {
+        let missingAlt = 0;
+
+        images.forEach(function(image) {
+            if (!image.hasAttribute("alt")) {
+                missingAlt++;
+            }
+        });
+
+        if (missingAlt === 0) {
+            results.push("✓ All images have alternative text.");
+        } else {
+            results.push("⚠ " + missingAlt +
+                " image(s) are missing alternative text.");
+        }
+    }
+
+    if (links.length > 0) {
+        results.push("✓ Navigation contains keyboard-accessible links.");
+    }
+
+    if (headings.length > 0) {
+        results.push("✓ Semantic headings are present.");
+    }
+
+    tables.forEach(function(table) {
+        if (table.querySelector("caption")) {
+            results.push("✓ Statistics table contains a caption.");
+        }
+
+        if (table.querySelector("th")) {
+            results.push("✓ Statistics table contains proper headers.");
+        }
+    });
+
+    document.getElementById("message").innerHTML =
+        results.join("<br>");
+}
+</script>
+
+</body>
+</html>
